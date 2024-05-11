@@ -56,4 +56,4 @@ return 0;
 }
 //Time complexibility of Selction Sort is O(n^2) weather it is best,worst or avg case
 //Selection Sort is not SORT STABLE 
-//if we use =equalto sign in the line no 36 it might be possible that it may be possible but most of time it reamins unstable only
+//if we use =equalto sign in the line no 36 it might be possible that it may be Stable but most of time it reamins unstable only
