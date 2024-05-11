@@ -31,15 +31,17 @@ int main()
     //Insertion Sort Algorithm Start From Here
     for(int i=1;i<n;i++)
     {
+        int temp=arr[i];
         int j=i;
-        while(arr[j] && arr[j]<arr[j-1])
-        // swap(arr[j],arr[j-1]);
+        while(j>=1 && arr[j]<arr[j-1])
+       
         {
-            int temp=arr[j];
-            arr[j]=arr[j-1];
-            arr[j-1]=temp;
-        }
+             // swap(arr[j],arr[j-1]);
+             int temp=arr[j];
+             arr[j]=arr[j-1];
+             arr[j-1]=temp;
         j--;
+        }
     }
 
     printf("\nAfter Sorting  \n");
