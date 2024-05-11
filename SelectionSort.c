@@ -57,3 +57,4 @@ return 0;
 //Time complexibility of Selction Sort is O(n^2) weather it is best,worst or avg case
 //Selection Sort is not SORT STABLE 
 //if we use =equalto sign in the line no 36 it might be possible that it may be Stable but most of time it reamins unstable only
+//The advantage of the selection sort is that O(n) Swaps whereas the Bubble sort takes O(n^2)swaps
