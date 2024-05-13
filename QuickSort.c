@@ -17,21 +17,23 @@ printf("\n");
 
 int partition(int A[],int low , int high)
 {
-    int pivot=A[low];
-    int i=low+1;
-    int j=high;
-    int temp;
+    int pivot=A[low];//element considered as a reference
+    int i=low+1;//low +1 as first index element is considered as pivot 
+    int j=high;//n-1
+    int temp;//for swapping
     do
     {
-        while(A[i]<=pivot)
+        while(A[i]<=pivot)//for solving left side 
+        //it will find element greater than pivot element as it find it will stop there
         {
-            i++;
+            i++;// if not found element greater than pivot it will move towards right 
         }
-        while(A[j]>pivot)
+        while(A[j]>pivot)//for solving right side
+        //if it finds the element lesser than pivot element as it will found it will stop there
         {
-            j--;
+            j--;//if not found decrement will be done
         }
-        if(i<j)
+        if(i<j)//the greater and lesser element founded swapping will be done for them
         {
             temp=A[i];
             A[i]=A[j];
@@ -39,6 +41,7 @@ int partition(int A[],int low , int high)
         }
     }
         while(i<j);
+        
         temp=A[low];
         A[low]=A[j];
         A[j]=temp;
