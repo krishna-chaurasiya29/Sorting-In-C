@@ -41,7 +41,7 @@ int partition(int A[],int low , int high)
         }
     }
         while(i<j);
-        
+
         temp=A[low];
         A[low]=A[j];
         A[j]=temp;
@@ -60,7 +60,7 @@ if(low<high)
 int main()
 {
 int n;
-print("Enter the Size of the Array\n");
+printf("Enter the Size of the Array\n");
 scanf("%d",&n);
 int A[n];
 printf("Enter The Elements \n");
@@ -68,8 +68,10 @@ for(int i=0;i<n;i++)
 {
     scanf("%d",&A[i]);
 }
+printf("Before Sorting \n");
 PrintArr(A,n);
 QuickSort(A,0,n-1);
+printf("\nAfter Sorting \n");
 PrintArr(A,n);
 return 0;
 }
